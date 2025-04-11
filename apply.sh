@@ -15,10 +15,10 @@ echo "Project URL name: $urlname";
 echo "Description: $description";
 
 echo "Rendering the Flask template..."
-original_author="author_name"
-original_name="project_name"
-original_urlname="project_urlname"
-original_description="project_description" 
+original_author="ranshuangxi1"
+original_name="2"
+original_urlname="2"
+original_description="Awesome 2 created by ranshuangxi1" 
 TEMPLATE_DIR="./.github/templates/flask"
 for filename in $(find ${TEMPLATE_DIR} -name "*.*" -not \( -name "*.git*" -prune \) -not \( -name "apply.sh" -prune \)) 
 do
@@ -48,7 +48,7 @@ fi
 # Move module files
 rm -rf "${name}"
 rm -rf tests
-cp -R ${TEMPLATE_DIR}/project_name "${name}"
+cp -R ${TEMPLATE_DIR}/2 "${name}"
 cp -R ${TEMPLATE_DIR}/tests tests
 
 cp ${TEMPLATE_DIR}/README.md README.md
@@ -66,12 +66,12 @@ then
     make install
     echo "Applied Flask template"
     echo "Ensure you activate your env with 'source .venv/bin/activate'"
-    echo "then run 'project_name' or 'python -m project_name'"
+    echo "then run '2' or 'python -m 2'"
 else
     poetry install
     echo "Applied Flask template"
     echo "Ensure you activate your env with 'poetry shell'"
-    echo "then run 'project_name' or 'python -m project_name' or 'poetry run project_name'"
+    echo "then run '2' or 'python -m 2' or 'poetry run 2'"
 fi
 
 echo "README.md has instructions on how to use this Flask application."
